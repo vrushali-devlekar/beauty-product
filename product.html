@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Light.css" rel="stylesheet">
+    <!--or github raw-->
+    <link href="raw.githubusercontent.com/repalash/gilroy-free-webfont/fonts/Gilroy-Light.css" rel="stylesheet">
+    <!--jsdelivr-->
+    <link href="https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Extrabold.css" rel="stylesheet">
+    <!--or github raw-->
+    <link href="https://raw.githubusercontent.com/repalash/gilroy-free-webfont/fonts/Gilroy-Extrabold.css"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -44,7 +52,7 @@
                 </div>
                 <div class="product-div-right">
                     <span class="product-name">Veggan cream - (All skin types)</span>
-                    <span class="product-price">$ 50.25</span>
+                    <span class="product-price"> 500.25 /-</span>
                     <div class="product-rating">
                         <span><i class="fas fa-star"></i></span>
                         <span><i class="fas fa-star"></i></span>
@@ -131,6 +139,54 @@
                 img.parentElement.classList.remove('active');
             });
         }
+
+        // script 
+        // navbar --
+let menu = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.header .navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle('fas-times');
+    navbar.classList.toggle('active');
+
+}
+
+window.onsroll = () => {
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+}
+
+let slides = document.querySelectorAll('.home .slide');
+let index = 0;
+function next() {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}
+function prev() {
+    slides[index].classList.remove('active');
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add('active');
+}
+
+
+/**
+ * scroll reveal effect
+ */
+
+const sections = document.querySelectorAll("[data-section]");
+
+const scrollReveal = function () {
+  for (let i = 0; i < sections.length; i++) {
+    if (sections[i].getBoundingClientRect().top < window.innerHeight / 2) {
+      sections[i].classList.add("active");
+    }
+  }
+}
+
+scrollReveal();
+
+addEventOnElem(window, "scroll", scrollReveal);
     </script>
 </body>
 
