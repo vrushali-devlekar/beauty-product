@@ -1,5 +1,5 @@
 * {
-    font-family: 'Gilroy';
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -98,8 +98,8 @@ section {
 .header .navbar a:hover {
     color: #FF9F00;
     font-weight: bold;
-    border-bottom: 1px solid #FF9F00;
-    border-bottom-width: 2px;
+    /* border-bottom: 1px solid #FF9F00; */
+    /* border-bottom-width: 2px; */
     
 }
 
@@ -418,11 +418,11 @@ color: #FF9F00;
     }
 
     .header {
-        padding: 1.5rem 2rem;
+        /* padding: 1.5rem 2rem; */
     }
 
     section {
-        padding: 5rem 2rem;
+        /* padding: 5rem 2rem; */
     }
 
 }
