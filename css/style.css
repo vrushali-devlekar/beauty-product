@@ -56,6 +56,7 @@ section {
     color: #222;
     margin-bottom: 3rem;
     font-size: 4.5rem;
+    animation: slideIn 0.5s ease forwards;
 }
 
 @keyframes fadeIn {
@@ -64,7 +65,14 @@ section {
         transform: translateY(-4rem) scale(0.4);
     }
 }
-
+@keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 .header {
     position: sticky;
     top: 0;
@@ -209,14 +217,20 @@ section {
 
 span{
     color: #FF9F00;
+    animation: fadeIn .1000s linear backwards .1000s;
+}
+span:hover{
+    animation: fadeIn .10s ease-in-out backwards .25s;
 }
 .shop{
     color: #eee;
+    animation: fadeIn .4s linear backwards .8s;
 }
 .shop .box-cointainer{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(31rem,1fr));
     gap: 2rem;
+    animation: fadeIn .6s linear ease-in-out;
 }
 .shop .box-cointainer .box{
     text-align: left;
@@ -287,6 +301,7 @@ span{
     grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
     gap: 2rem;
     background: #FF9F00;
+    animation: fadeIn .1000s linear backwards .2500s;
 }
 
 .services .box{
