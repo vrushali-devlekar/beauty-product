@@ -20,12 +20,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fadeIn .10s linear backwards .25s;
 }
 
 .container {
     max-width: 1200px;
     padding: 0 1rem;
     margin: 0 auto;
+    animation: fadeIn .10s linear backwards .25s;
 }
 
 .product-div {
@@ -36,6 +38,7 @@ body {
     /* background-color: #fff; */
     border-radius: 3px;
     column-gap: 10px;
+    animation: fadeIn .10s linear backwards .25s;
 }
 
 .product-div-left {
@@ -59,6 +62,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 32px;
+    animation: fadeIn .10s linear backwards .25s;
 }
 
 .hover-container div {
