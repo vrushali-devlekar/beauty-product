@@ -6,7 +6,7 @@
 
 html,
 body {
-    font-family: 'Gilroy';
+    font-family: "Poppins", sans-serif;
 }
 
 .img1 {
@@ -33,7 +33,7 @@ body {
     padding: 2rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 3px;
     column-gap: 10px;
 }
